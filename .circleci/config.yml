@@ -26,7 +26,7 @@ jobs:
       - run:
           name: Build and push Docker image
           command: |
-            sudo apt-get install python3-dev
+#            sudo apt-get install python3-dev
             . helloworld/bin/activate
             pyinstaller -F hello_world.py
             docker build -t $DOCKER_LOGIN/$IMAGE_NAME:$TAG .
