@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cimg/python:3.9.5
+      - image: circleci/python@1.4.0
         environment:
           FLASK_CONFIG: testing
     steps:
