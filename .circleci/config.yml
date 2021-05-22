@@ -18,11 +18,11 @@ jobs:
             virtualenv helloworld
             . helloworld/bin/activate
             pip install  -r requirements.txt
-      - run:
-          name: Run Tests
-          command: |
-            . helloworld/bin/activate
-            python test_hello_world.py
+#      - run:
+#          name: Run Tests
+#          command: |
+#            . helloworld/bin/activate
+#            python test_hello_world.py
       - run:
           name: Build and push Docker image
           command: |
