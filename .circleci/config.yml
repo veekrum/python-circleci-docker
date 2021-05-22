@@ -17,7 +17,7 @@ jobs:
             echo 'export IMAGE_NAME=python-circleci-docker' >> $BASH_ENV 
             virtualenv helloworld
             . helloworld/bin/activate
-            pip install --no-cache-dir -r requirements.txt
+            pip install  -r requirements.txt
       - run:
           name: Run Tests
           command: |
